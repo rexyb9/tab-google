@@ -1,0 +1,162 @@
+/*? global clearing */
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* overflow: visible; */
+}
+
+:root {
+  --color-black-primary: rgb(0, 0, 0, 0.65);
+  --color-black-secondary: rgb(0, 0, 0, 0.15);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--color-black-primary);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+}
+
+.feature img {
+  width: 285px;
+  height: auto;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  width: 100%;
+}
+
+.search__input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid var(--color-black-secondary);
+  padding: 0 16px;
+  border-radius: 99px;
+  background-color: var(--color-black-primary);
+}
+
+#searchInput {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.search__input:hover {
+  box-shadow: 1px 1px 7px 5px rgba(0, 0, 0, 0.11);
+  -webkit-box-shadow: 1px 1px 7px 5px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 1px 1px 7px 5px rgba(0, 0, 0, 0.11);
+}
+
+.search__input input {
+  flex: 1;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 4px;
+  border: none;
+  outline: none;
+}
+
+.search__action {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.tes {
+  /* display: flex; */
+  /* flex-direction: row; */
+}
+
+.search__action button {
+  border: 1px solid transparent;
+  padding: 7px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: var(--color-black-secondary);
+  color: #fff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.search__action button:hover {
+  border: 1px solid var(--color-black-secondary);
+}
+
+#jam {
+  color: #fff;
+  font-size: 85px;
+  text-align: end !important;
+}
+
+.material-icons{
+  color: #fff
+}
+
+.kalender {
+  position: relative;
+  width: 200px;
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.kalender #bulan {
+  position: relative;
+  padding: 5px 10px;
+  background-color: #ff6331;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 200;
+  width: 100%;
+}
+
+.kalender #hari {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #999;
+}
+
+.kalender #tanggal {
+  margin-top: 0px;
+  line-height: 1em;
+  font-size: 80px;
+  font-weight: 700;
+  color: #333;
+}
+
+.kalender #tahun {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #999;
+}
