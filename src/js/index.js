@@ -5,6 +5,10 @@ function search() {
 
   if (!value) value = "bocil programer";
   location.replace(baseUrl + value);
+
+  document.addEventListener("keydown", (r) => {
+    if (r.key == "Enter") location.replace(baseUrl + value);
+  });
 }
 
 const date = new Date();

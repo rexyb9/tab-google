@@ -86,11 +86,6 @@ section {
   gap: 16px;
 }
 
-.tes {
-  /* display: flex; */
-  /* flex-direction: row; */
-}
-
 .search__action button {
   border: 1px solid transparent;
   padding: 7px 12px;
