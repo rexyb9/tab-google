@@ -25,5 +25,12 @@ tahun.textContent = date.getFullYear();
 setInterval(() => {
   const date = new Date();
   const jam = document.getElementById("jam");
-  jam.textContent = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+  let jams = ""
+  let menit = ""
+  let detik = ""
+
+  date.getHours() < 10 ? jams = `0${date.getHours()}` : jams = date.getHours()
+  date.getMinutes() < 10 ? menit = `0${date.getMinutes()}` : menit = date.getMinutes()
+  date.getSeconds() < 10 ? detik = `0${date.getSeconds()}` : detik = date.getSeconds()
+  jam.textContent = `${jams}:${menit}:${detik}`;
 });
