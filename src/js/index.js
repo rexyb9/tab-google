@@ -1,20 +1,38 @@
+// ini untuk pencarian di google dan membuka url
+
+// function search() {
+//   let { value } = document.getElementById("searchInput");
+
+//   const c = confirm("url or text, ok for url cancel for text");
+
+//   document.addEventListener("keydown", (r) => {
+//     if (r.key == "Enter") c;
+//   });
+
+//   if (c) location.replace(`https://${value}`);
+//   if (!c) {
+//     const baseUrl = "https://google.com/search?q=";
+
+//     if (!value) value = "bocil programer";
+
+//     location.replace(baseUrl + value);
+//   }
+// }
+
+// ini untuk pencarian di google
+
 function search() {
   let { value } = document.getElementById("searchInput");
 
-  const c = confirm("url or text, ok for url cancel for text");
-
   document.addEventListener("keydown", (r) => {
-    if (r.key == "Enter") c;
+    if (r.key == "Enter");
   });
 
-  if (c) location.replace(`https://${value}`);
-  if (!c) {
-    const baseUrl = "https://google.com/search?q=";
+  const baseUrl = "https://google.com/search?q=";
 
-    if (!value) value = "bocil programer";
+  if (!value) value = "bocil programer";
 
-    location.replace(baseUrl + value);
-  }
+  location.replace(baseUrl + value);
 }
 
 const date = new Date();
@@ -24,7 +42,7 @@ const hari = document.getElementById("hari");
 const tanggal = document.getElementById("tanggal");
 const tahun = document.getElementById("tahun");
 bulan.textContent = date.toLocaleDateString(lang, { month: "long" });
-tanggal.textContent = date.getDay();
+tanggal.textContent = date.getDate();
 hari.textContent = date.toLocaleDateString(lang, { weekday: "long" });
 tahun.textContent = date.getFullYear();
 
