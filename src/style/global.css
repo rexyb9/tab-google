@@ -19,7 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: var(--color-black-primary);
+  background-color: #0e1217;
 }
 
 section {
@@ -61,7 +61,7 @@ section {
 }
 
 #searchInput {
-  background-color: #1f1f1f;
+  background-color: #050608;
   color: #fff;
 }
 

@@ -1,25 +1,6 @@
-// ini untuk pencarian di google dan membuka url
+const btn = document.getElementById("search")
 
-// function search() {
-//   let { value } = document.getElementById("searchInput");
-
-//   const c = confirm("url or text, ok for url cancel for text");
-
-//   document.addEventListener("keydown", (r) => {
-//     if (r.key == "Enter") c;
-//   });
-
-//   if (c) location.replace(`https://${value}`);
-//   if (!c) {
-//     const baseUrl = "https://google.com/search?q=";
-
-//     if (!value) value = "bocil programer";
-
-//     location.replace(baseUrl + value);
-//   }
-// }
-
-// ini untuk pencarian di google
+btn.addEventListener("click", search)
 
 function search() {
   let { value } = document.getElementById("searchInput");
